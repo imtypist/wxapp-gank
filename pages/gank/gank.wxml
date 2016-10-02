@@ -1,0 +1,15 @@
+<view>
+	<view class="body-view">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+	</view>
+	<view>
+		<view class="list-block" wx:for="{{gank}}" wx:for-item="gank" data-block-time="{{gank.publishedAt}}" bindtap="clickBlock">
+			<image class="list-img" src="{{gank.url}}" mode="aspectFill"></image>
+			<text class="time">{{gank.publishedAt}}</text>
+			<text class="title">{{gank.title}}</text>
+		</view>
+	</view>
+	<text class="load" style="display:{{display}}">下滑加载更多</text>
+</view>

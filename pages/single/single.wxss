@@ -1,0 +1,28 @@
+page{
+	background-color: #f8f8f8;
+}
+
+.title{
+	display: block;
+	font-size: 1.5rem;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+
+.list-detail{
+	width: 100%;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 4px #dddddd;
+	padding: 5px 0;
+}
+
+.link{
+	margin: 8px 5px;
+	font-size: 0.8rem;
+	color:#A9A9A9;
+}
+
+video{
+	margin: 5px 10px;
+}

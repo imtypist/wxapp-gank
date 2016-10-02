@@ -1,0 +1,16 @@
+<view class="body-view">
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>
+<view style="background-color:#ffffff">
+	<image src="{{img.url}}" mode="aspectFill"></image>
+</view>
+<view class="list-detail" wx:for="{{results}}">
+	<text class="title">{{item.category}}</text>
+	<view class="link" wx:for="{{item.detail}}" data-href="{{item.url}}">{{index+1}}.{{item.desc}}</view>
+</view>
+<view class="list-detail" style="margin-bottom:0">
+	<text class="title">休息视频</text>
+	<video wx:if="{{video != null}}" src="{{video}}"></video>
+</view>
