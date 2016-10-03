@@ -3,7 +3,8 @@ Page({
 		img:{},
 		results:[],
 		video:null,
-		hidden:false
+		hidden:false,
+		display:"none"
 	},
 	onLoad: function(options){
 		var time = options.time.replace(/-/g,"/");
@@ -33,12 +34,12 @@ Page({
 						results.push(temp);
 					}
 				}
-				console.log(results);
 				that.setData({
 					img:img,
 					results:results,
 					video:video,
-					hidden:true
+					hidden:true,
+					display:"block"
 				});
 				that.update();
 			}

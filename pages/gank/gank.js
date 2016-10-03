@@ -1,23 +1,40 @@
-var util = require('../../utils/util.js');
-var pageNo = 1;
+var pageNum = 1;
 var totalData = [];
+var lock = true;
 
 Page({
   data: {
     gank: [],
     hidden:false,
-    display:"none"
+    display:"none",
+    loadMoreText:"加载中"
   },
   onLoad: function () {
     var that = this;
-    getList(that,pageNo);
+    getList(that,pageNum);
   },
   clickBlock: function(e){
     wx.navigateTo({url:"/pages/single/single?time="+ e.currentTarget.dataset.blockTime});
+  },
+  loadMore: function(){
+    var that = this;
+    if(lock){
+      that.setData({
+        loadMoreText:"加载中"
+      });
+      that.update();
+      getList(that,pageNum);
+    }else{
+      that.setData({
+        loadMoreText:"不要急嘛"
+      });
+      that.update();
+    }
   }
 });
 
 function getList(that,pageNo){
+  lock = false;
   wx.request({
       url:"http://gank.io/api/history/content/10/" + pageNo,
       header:{
@@ -25,7 +42,7 @@ function getList(that,pageNo){
       },
       success:function(req){
         var data = req.data;
-        pageNo ++;
+        pageNum += 1;
         if(data.error == false){
           var re = new RegExp("http://w{2}[^\"]*");
           for(var i = 0;i < data.results.length;i++){
@@ -41,11 +58,12 @@ function getList(that,pageNo){
           that.setData({
             gank:totalData,
             hidden:true,
-            display:"block"
+            display:"block",
+            loadMoreText:"下滑加载更多"
           });
           that.update();
+          lock = true;
         }
       }
     });
-  console.log(totalData);
 }

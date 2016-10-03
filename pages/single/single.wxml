@@ -3,14 +3,14 @@
         加载中...
     </loading>
 </view>
-<view style="background-color:#ffffff">
-	<image src="{{img.url}}" mode="aspectFill"></image>
+<view style="background-color:#ffffff" style="display:{{display}}">
+	<image src="{{img.url}}" mode="aspectFill" style="width:100%"></image>
 </view>
-<view class="list-detail" wx:for="{{results}}">
+<view class="list-detail" wx:for="{{results}}" style="display:{{display}}">
 	<text class="title">{{item.category}}</text>
 	<view class="link" wx:for="{{item.detail}}" data-href="{{item.url}}">{{index+1}}.{{item.desc}}</view>
 </view>
-<view class="list-detail" style="margin-bottom:0">
+<view class="list-detail" style="margin-bottom:0" style="display:{{display}}">
 	<text class="title">休息视频</text>
-	<video wx:if="{{video != null}}" src="{{video}}"></video>
+	<video wx:if="{{video != null}}" src="{{video}}" style="width:100%"></video>
 </view>

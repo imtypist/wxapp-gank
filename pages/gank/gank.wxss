@@ -19,6 +19,7 @@ page{
 	display: block;
 	margin-bottom: 5px;
 	text-align: center;
+	color:#A9A9A9;
 }
 
 .time{

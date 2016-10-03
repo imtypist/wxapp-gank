@@ -1,4 +1,4 @@
-<view>
+<scroll-view scroll-y="true" style="height:100%" bindscrolltolower="loadMore">
 	<view class="body-view">
     <loading hidden="{{hidden}}">
         加载中...
@@ -11,5 +11,5 @@
 			<text class="title">{{gank.title}}</text>
 		</view>
 	</view>
-	<text class="load" style="display:{{display}}">下滑加载更多</text>
-</view>
+	<text class="load" style="display:{{display}}">{{loadMoreText}}</text>
+</scroll-view>
