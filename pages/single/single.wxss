@@ -4,7 +4,7 @@ page{
 
 .title{
 	display: block;
-	font-size: 1.5rem;
+	font-size: 20pt;
 	padding-left: 5px;
 	margin-bottom: 10px;
 }
@@ -19,8 +19,8 @@ page{
 
 .link{
 	margin: 8px 5px;
-	font-size: 0.8rem;
-	color:#A9A9A9;
+	font-size: 17pt;
+	color:#576B95;
 }
 
 video{

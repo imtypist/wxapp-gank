@@ -30,6 +30,9 @@ Page({
       });
       that.update();
     }
+  },
+  jmpToSetting: function(){
+    wx.navigateTo({url:"/pages/setting/setting"});
   }
 });
 

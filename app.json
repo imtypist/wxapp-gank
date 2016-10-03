@@ -1,36 +1,16 @@
 {
   "pages":[
-    "pages/apps/apps",
     "pages/gank/gank",
+    "pages/apps/apps",
     "pages/index/index",
-    "pages/single/single"
+    "pages/single/single",
+    "pages/setting/setting",
+    "pages/commit/commit"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "干货集中营",
     "navigationBarTextStyle":"black"
-  },
-  "tabBar":{
-    "color":"#dddddd",
-    "selectedColor":"#3cc51f",
-    "borderStyle":"white",
-    "bacgroundColor":"#ffffff",
-    "list":[{
-      "pagePath":"pages/apps/apps",
-      "iconPath":"image/wechat.png",
-      "selectedIconPath":"image/wechatHL.png",
-      "text":"WeChat"
-    }, {
-      "pagePath":"pages/gank/gank",
-      "iconPath":"image/icon_API.png",
-      "selectedIconPath":"image/icon_API_HL.png",
-      "text":"Gank"
-    }, {
-      "pagePath":"pages/index/index",
-      "iconPath":"image/icon_component.png",
-      "selectedIconPath":"image/icon_component_HL.png",
-      "text":"程序猿"
-    }]
   }
 }

@@ -15,23 +15,40 @@ page{
 }
 
 .load{
-	font-size: 1rpx;
+	font-size: 10pt;
 	display: block;
 	margin-bottom: 5px;
 	text-align: center;
-	color:#A9A9A9;
+	color:#b2b2b2;
 }
 
 .time{
 	display: block;
-	color: #A9A9A9;
+	color: #888888;
 	text-align: right;
 	padding-right: 10px;
-	font-size: 0.8rpx;
+	font-size: 13pt;
 }
 
 .title{
 	display: block;
 	padding: 5px;
-	font-size: 24rpx;
+	color: #353535;
+	font-size: 16pt;
+}
+
+.plus-holder{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #09BB07;
+}
+
+.plus{
+	width: 30px;
+	height: 30px;
+	margin: 5px;
 }
