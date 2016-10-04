@@ -13,11 +13,11 @@
     </view>
     <view class="section">
         <view class="section_title">类型</view>
-        <input class="input" id="type" placeholder="干货类型" bindchange="bindChange"/>
+        <input class="input" id="type" placeholder="点击选择干货类型" bindtap="showSheet" value="{{typeName}}"/>
     </view>
     <view class="btn-area">
-        <button loading="{{loading}}" disabled="{{disabled}}" type="primary" class="button" bindtap="submitGank">Submit</button>
-        <button formType="reset" class="button">Reset</button>
+        <button loading="{{loading}}" disabled="{{disabled}}" type="primary" class="button" bindtap="submitGank">(｡◕∀◕｡) 发射!</button>
+        <button formType="reset" class="button">重置</button>
     </view>
 </form>
 <view class="body-view">
@@ -25,3 +25,9 @@
         提交成功
     </toast>
 </view>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item class="item" bindtap="bindName" data-type-name="{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>

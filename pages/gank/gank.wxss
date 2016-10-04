@@ -15,7 +15,7 @@ page{
 }
 
 .load{
-	font-size: 10pt;
+	font-size: 10px;
 	display: block;
 	margin-bottom: 5px;
 	text-align: center;
@@ -27,14 +27,14 @@ page{
 	color: #888888;
 	text-align: right;
 	padding-right: 10px;
-	font-size: 13pt;
+	font-size: 13px;
 }
 
 .title{
 	display: block;
 	padding: 5px;
 	color: #353535;
-	font-size: 16pt;
+	font-size: 16px;
 }
 
 .plus-holder{

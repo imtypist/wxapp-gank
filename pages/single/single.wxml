@@ -4,11 +4,13 @@
     </loading>
 </view>
 <view style="background-color:#ffffff" style="display:{{display}}">
-	<image src="{{img.url}}" mode="aspectFill" style="width:100%"></image>
+	<image src="{{img.url}}" data-image-href="{{img.url}}" mode="aspectFill" style="width:100%"></image>
 </view>
 <view class="list-detail" wx:for="{{results}}" style="display:{{display}}">
 	<text class="title">{{item.category}}</text>
-	<view class="link" wx:for="{{item.detail}}" data-href="{{item.url}}">{{index+1}}.{{item.desc}}</view>
+	<view class="link" wx:for="{{item.detail}}" data-url-href="{{item.url}}">
+	{{index+1}}.{{item.desc}}<text class="who">({{item.who}})</text>
+	</view>
 </view>
 <view class="list-detail" style="margin-bottom:0" style="display:{{display}}">
 	<text class="title">休息视频</text>

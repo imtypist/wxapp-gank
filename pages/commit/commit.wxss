@@ -29,6 +29,10 @@ form{
 	height: 100%;
 }
 
+.btn-area{
+	margin-top: 50px;
+}
+
 .button{
 	height: 44px;
 	margin: 10px 15px;
