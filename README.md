@@ -1,6 +1,11 @@
 # 微信小程序 for gank.io
 
-![wxapp](https://github.com/AwesomeIcon/wxapp-gank/blob/master/image/wxapp.gif)
+### 界面预览
+
+![](http://p1.bqimg.com/567571/05d1857b82b02827.png)
+![](http://p1.bqimg.com/567571/c026802770b4b847.png)
+![](http://p1.bqimg.com/567571/c94cca6577631830.png)
+![](http://p1.bqimg.com/567571/5e0537e268410d67.png)
 
 ### 更新日志
 
