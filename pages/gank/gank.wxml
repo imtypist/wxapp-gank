@@ -13,6 +13,6 @@
 	</view>
 	<text class="load" style="display:{{display}}">{{loadMoreText}}</text>
 </scroll-view>
-<view class="plus-holder" bindtap="jmpToSetting">
-	<image src="/image/plus.png" class="plus"></image>
+<view class="plus-holder" bindtap="jmpToSetting" animation="{{animationData}}">
+	<image src="/image/plus.png" class="plus" style="display:{{img}}"></image>
 </view>

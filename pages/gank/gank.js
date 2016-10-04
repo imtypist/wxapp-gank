@@ -7,7 +7,9 @@ Page({
     gank: [],
     hidden:false,
     display:"none",
-    loadMoreText:"加载中"
+    loadMoreText:"加载中",
+    animationData:{},
+    img:"block"
   },
   onLoad: function () {
     var that = this;
@@ -32,7 +34,36 @@ Page({
     }
   },
   jmpToSetting: function(){
-    wx.navigateTo({url:"/pages/setting/setting"});
+    // 创建动画
+    var animation = wx.createAnimation({
+      duration:500,
+      timingFunction:"ease-out",
+    });
+    var that = this;
+    that.animation = animation;
+    // 放大50倍，降低透明度
+    animation.scale(50).opacity(0.3).step();
+    // 隐藏 ‘+’
+    that.setData({
+      img:"none",
+      animationData:animation.export()
+    });
+    // 页面跳转
+    setTimeout(function(){
+      wx.navigateTo({url:"/pages/setting/setting"});
+    },300);
+    // 动画复原
+    setTimeout(function(){
+      animation = wx.createAnimation({
+        duration:0,
+      });
+      that.animation = animation;
+      animation.opacity(1).step();
+      that.setData({
+        img:"block",
+        animationData:animation.export()
+      })
+    },500);
   }
 });
 
