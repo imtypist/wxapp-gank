@@ -2,10 +2,10 @@
 
 ### 界面预览
 
-![](http://p1.bqimg.com/567571/05d1857b82b02827.png)
-![](http://p1.bqimg.com/567571/c026802770b4b847.png)
-![](http://p1.bqimg.com/567571/c94cca6577631830.png)
-![](http://p1.bqimg.com/567571/5e0537e268410d67.png)
+![](./snapshots/index.png)
+![](./snapshots/detail.png)
+![](./snapshots/commit.png)
+![](./snapshots/forfun.png)
 
 ### 更新日志
 
@@ -28,10 +28,10 @@
 - 提交干货类型改成action-sheet选择
 - 增加过场动画
 
-![](http://p1.bpimg.com/567571/7749d331a118d00b.gif)
+![](./snapshots/animation.gif)
 
 【2016.10.7】
 - 增加预览图片功能
 - 增加下载保存图片功能(可能是因为模拟器的原因，下载和保存的API调用不了，console也没有报错，success和fail均捕捉不到，不知道真机上能不能用)
 
-![](http://i1.piimg.com/567571/84d447e0d0dab434.png)
+![](./snapshots/download.png)
